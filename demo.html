@@ -1,0 +1,238 @@
+
+<script src="${STATIC_URL}js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="${STATIC_URL}js/csrftoken.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" />
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+
+
+
+
+
+<div>hello world!</div>
+<button id="btn_click" onclick="initKendoLineChart">
+    点击
+</button>
+<div id="charts_line_demo" style="height: 500px; padding: 10px; position: relative;" data-role="chart" class="k-chart">
+    <svg style="width: 100%; height: 100%; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <defs>
+            <clipPath id="kdef1">
+                <path d="M41 14.5 L 1077 14.5 1077 406 41 406Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+            </clipPath>
+        </defs>
+        <g>
+            <path d="M0 0 L 1083 0 1083 480 0 480Z" stroke="none" fill="#ffffff"></path>
+            <path d="M41 14.5 L 1077 14.5 1077 406 41 406Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+            <g>
+                <g></g>
+                <g>
+                    <path d="M41.5 328.5 L 1077.5 328.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                    <path d="M41.5 249.5 L 1077.5 249.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                    <path d="M41.5 171.5 L 1077.5 171.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                    <path d="M41.5 93.5 L 1077.5 93.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                    <path d="M41.5 15.5 L 1077.5 15.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                </g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M41.5 406.5 L 1077.5 406.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M41.5 406.5 L 41.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M127.5 406.5 L 127.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M214.5 406.5 L 214.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M300.5 406.5 L 300.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M386.5 406.5 L 386.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M473.5 406.5 L 473.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M559.5 406.5 L 559.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M645.5 406.5 L 645.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M732.5 406.5 L 732.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M818.5 406.5 L 818.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M904.5 406.5 L 904.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M991.5 406.5 L 991.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                            <path d="M1077.5 406.5 L 1077.5 410.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                        </g>
+                    </g>
+                </g>
+                <g clip-path="url(#kdef1)">
+                    <g>
+                        <path d="M84.167 92.8 C 112.916 103.23 141.751 124.12 170.5 124.12 199.249 124.12 228.084 108.46 256.834 108.46 285.582 108.46 314.418 154.152 343.167 171.1 371.916 188.048 400.751 190.955 429.5 210.25 458.249 229.545 487.084 286.984 515.833 286.984 544.582 286.984 573.418 217.013 602.167 194.59 630.916 172.166 659.751 152.308 688.5 152.308 717.249 152.308 746.084 318.863 774.834 355.888 789.425 374.68 832.418 367.901 861.167 374.68 889.916 381.459 918.751 392.171 947.5 396.604 976.249 401.037 1005.084 399.738 1033.834 401.302"
+                        stroke="#f9ce1d" stroke-width="2" fill="none"></path>
+                        <circle cx="84.167" cy="92.8" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="170.5" cy="124.12" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="256.834" cy="108.46" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="343.167" cy="171.1" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="429.5" cy="210.25" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="515.833" cy="286.984" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="602.167" cy="194.59" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="688.5" cy="152.308" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="774.834" cy="355.888" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="861.167" cy="374.68" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="947.5" cy="396.604" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="1033.834" cy="401.302" r="4" stroke="#f9ce1d" stroke-width="2" stroke-opacity="1" fill="#ffffff" fill-opacity="1"></circle>
+                        <circle cx="602.167" cy="194.59" r="4" stroke="#000" stroke-width="0" stroke-opacity="1" fill="#f9ce1d" fill-opacity="1" style="display: none;"></circle>
+                        <circle cx="688.5" cy="152.308" r="4" stroke="#000" stroke-width="0" stroke-opacity="1" fill="#f9ce1d" fill-opacity="1" style="display: none;"></circle>
+                        <circle cx="774.834" cy="355.888" r="4" stroke="#000" stroke-width="0" stroke-opacity="1" fill="#f9ce1d" fill-opacity="1" style="display: none;"></circle>
+                    </g>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="64.1665" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="150.5" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="236.83350000000002" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="323.16650000000004" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="409.5" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="495.83349999999996" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="582.1665" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="668.5" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="754.8335" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="841.1665" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="927.5" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="1013.8335" y="429" stroke="none" fill="#333333" fill-opacity="1">07:10</text>
+                </g>
+                <g>
+                    <g>
+                        <path d="M41.5 15.5 L 41.5 406.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                        <path d="M37.5 406.5 L 41.5 406.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                        <path d="M37.5 328.5 L 41.5 328.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                        <path d="M37.5 249.5 L 41.5 249.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                        <path d="M37.5 171.5 L 41.5 171.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                        <path d="M37.5 93.5 L 41.5 93.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                        <path d="M37.5 15.5 L 41.5 15.5" stroke="#cccccc" stroke-width="1" fill="none"></path>
+                    </g>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="24" y="410.5" stroke="none" fill="#333333" fill-opacity="1">0</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="14" y="332.2" stroke="none" fill="#333333" fill-opacity="1">50</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="5" y="253.90000000000003" stroke="none" fill="#333333" fill-opacity="1">100</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="5" y="175.6" stroke="none" fill="#333333" fill-opacity="1">150</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="5" y="97.3" stroke="none" fill="#333333" fill-opacity="1">200</text>
+                </g>
+                <g>
+                    <text style="font:12px Arial,Helvetica,sans-serif;" x="5" y="19" stroke="none" fill="#333333" fill-opacity="1">250</text>
+                </g>
+            </g>
+            <g></g>
+            <g>
+                <g>
+                    <g transform="matrix(1,0,0,1,510,444)">
+                        <path d="M1 7 L 8 7 8 14 1 14Z" stroke="#f9ce1d" stroke-width="1" fill="#f9ce1d"></path>
+                        <g>
+                            <text style="font:12px Arial,Helvetica,sans-serif;" x="15" y="17" stroke="none" fill="#333333" fill-opacity="1">项目一</text>
+                        </g>
+                        <path style="cursor:pointer;" d="M0 0 L 63 0 63 21 0 21Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                    </g>
+                </g>
+            </g>
+            <g></g>
+        </g>
+    </svg>
+</div>
+<script type="text/javascript">
+    function createKendoLineChart(conf){
+        // 创建图表
+        $(conf.selector).kendoChart({
+            transitions: false,
+            legend: {
+               position: "bottom"
+            },
+            theme : 'bootstrap',
+            seriesDefaults: {
+                type: conf.type,
+                style: "smooth"
+            },
+            series: conf.data.series,
+            categoryAxis: {
+                majorGridLines : {
+                    visible: false
+                },
+                categories: conf.data.categories,
+                labels: {
+                    rotation: "auto"
+                }
+            },
+            tooltip: {
+                visible: true,
+                template: "#= category # #= value #"
+            }
+
+        });
+        //重新绘制
+        $(window).on('resize',function(){
+            var chart = $(conf.selector).data("kendoChart");
+            chart.redraw();
+        });
+    }
+    function initKendoLineChart(conf){
+        // 异步请求后台数据
+        $.ajax({
+            url: conf.url,
+            type: 'GET',
+            dataType: conf.dataType,
+            success: function(res){
+                //获取数据成功
+                if (res.result){
+                    var data = res.data;
+                    createKendoLineChart({
+                        selector: conf.containerId, // 图表容器
+                        type: conf.type, // 图表类型
+                        data: data, // 图表数据
+                    });
+                }
+            }
+        })
+    }
+    $(function(){
+        initKendoLineChart({
+            url: '/data/',
+            dataType: 'json',
+            type: "line",
+            containerId: '#charts_line_demo'
+        });
+    });
+</script>
+
+
+
+
+
+<script>
+$.ajax({
+        url:"/data/",
+        data:{"name":"roger"},
+        type:"post",
+        success:function(res) {
+            console.log(res)
+        }
+})
+</script>
+
+<input type='hidden' name='csrfmiddlewaretoken' value='${csrf_token}'>
