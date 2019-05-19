@@ -1,0 +1,25 @@
+<script src="${STATIC_URL}js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="${STATIC_URL}js/csrftoken.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" />
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+<input type='hidden' name='csrfmiddlewaretoken' value='${csrf_token}'>
+
+<div>hello world!</div>
+<button id="btn_click" onclick="">
+    点击
+</button>
+
+<script>
+$('#btn_click').click(function () {
+$.ajax({
+        url:"/orm/",
+        data:{"name":"roger"},
+        type:"post",
+        success:function(res) {
+            console.log(res)
+        }
+    })
+})
+</script>
