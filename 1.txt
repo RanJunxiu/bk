@@ -1,0 +1,9 @@
+
+import datetime
+def data(request):
+    async_task.delay()
+
+    next_date = "2019-05-19 11:00:00"
+    do_time = datetime.datetime.strptime(next_date, "%Y-%m-%d %H:%M:%S")
+    async_task.apply_async(args=['a', 'b'], eta = do_time)
+    return render_json({'data':'123'})

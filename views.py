@@ -10,6 +10,7 @@ See the License for the specific language governing permissions and limitations 
 """
 
 from common.mymako import render_mako_context,render_json
+import requests
 
 
 def home(request):
@@ -38,6 +39,13 @@ def demo(request):
     """
     return render_mako_context(request, '/home_application/demo.html')
 
+def orm(request):
+    """
+    demo
+    """
+    return render_mako_context(request, '/home_application/orm.html')
+
+"""
 def data(request):
 #    request.post
     a = request.POST.dict()
@@ -55,4 +63,36 @@ def data(request):
         "categories": ["07:10", "07:10", "07:10", "07:10", "07:10", "07:10", "07:10", "07:10", "07:10", "07:10", "07:10", "07:10"]
     }
 })
+"""
 
+"""
+from conf.default import APP_ID, APP_TOKEN
+def orm(request):
+    data = {
+        'bk_app_code': APP_ID,
+        'bk_app_secert': APP_TOKEN,
+        'bk_token': request.COOKIES.get('bk_token'),
+        'bk_biz_id': request.GET.get('id')
+    }
+
+    res = requests.post(url = "http://paas.bkds.com/api/c/compapi/v2/job/fast_execute_script/",
+                   json = data
+                   )
+    return render_json(res.content)
+"""
+
+from conf.default import APP_ID, APP_TOKEN
+import json
+def orm(request):
+    url = "http://paas.bkds.com/api/c/compapi/v2/cc/search_business/"
+    data = {
+        'bk_app_code': APP_ID,
+        'app_secret': APP_TOKEN,
+        'bk_username': "admin"
+    }
+    res = requests.post(url, data)
+    print APP_ID
+    print APP_TOKEN
+    result = json.loads(res.content)
+    print result
+    return render_json(res.content)
